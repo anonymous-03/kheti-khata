@@ -12,7 +12,8 @@
     --border-dark: #434242;
     --white: #ffffff;
     --gray: #7b7a7a;
-    --glow: #9dee6b;
+    --glow-red: #c70101;
+    --glow-green: #9dee6b;
     --text-primary: rgb(112, 2, 2);
     --line-space-1: 1.5rem;
     --img-height: 21rem;
@@ -285,7 +286,7 @@
 .main-flex-list li:hover {
     transform: translateY(-10px);
     background: var(--gray);
-    box-shadow: 0 0 15px var(--glow);
+    box-shadow: 0 0 15px var(--glow-green);
     /* Glowing effect with blue color */
     background-color: var(--white);
     /* Optional: Change background color on hover */
@@ -351,6 +352,31 @@
 .main-description p {
     margin: 10px 0;
 }
+/* CHAT */
+.chat-container {
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right side of the viewport */
+    z-index: 100; /* Ensures the button stays on top of other elements */
+}
+
+.chat-btn {
+    border: none; /* Remove default button border */
+    padding: 15px; /* Button padding */
+    background: transparent;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.chat-btn img{
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.chat-btn img:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 0 15px var(--glow-red);;
+}
+
 
 
 /* FOOTER */
