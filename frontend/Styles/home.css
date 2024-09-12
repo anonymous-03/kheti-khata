@@ -18,7 +18,7 @@
     --img-height: 21rem;
     --title: 2rem;
     --title-2: 1.45rem;
-    --title-3: 1.25rem;
+    --title-3: 1rem;
     --button: 1rem;
 }
 
@@ -73,6 +73,10 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.flex-left{
+    margin-left: auto;
 }
 
 
@@ -177,7 +181,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* mask-image: linear-gradient(to bottom, black 92%, transparent 100%); */
+    mask-image: linear-gradient(to bottom, black 92%, transparent 100%);
     /* Apply blur effect at the bottom */
 }
 
@@ -192,11 +196,14 @@
     letter-spacing: 2px;
 }
 
-/* @media (max-width:768px) {
+@media (max-width:768px) {
     .title{
-        height:250px;
+        height: 300px;
     }
-} */
+    .title h1{
+        font-size: var(--title-2);
+    }
+}
 
 /* MAIN SECTION */
 
@@ -290,6 +297,7 @@
     align-items: center;
     color: var(--text-primary);
     gap: 10px;
+    padding: 10px 0;
 }
 
 .details {
